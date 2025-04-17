@@ -9,7 +9,8 @@ class Student:
 
         Args:
             name (str): The student's name
-            grades (list, optional): List of student's grades. Defaults to None.
+            grades (list, optional): List of student's grades.
+            Defaults to None.
         """
         self.name = name
         self.grades = grades if grades is not None else []
@@ -50,10 +51,10 @@ def main():
     """Main function to demonstrate the usage of Student class."""
     # Create a student instance
     student = Student("Alice", [85, 92, 78])
-    
+
     # Add a new grade
     student.add_grade(90)
-    
+
     # Print formatted student information
     print(format_student_info(student))
 
